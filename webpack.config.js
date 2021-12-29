@@ -17,15 +17,8 @@ const config = {
             openBrowser(`http://${host}:${port}`);
         },
         port,
-        proxy:{
-            '/api':{
-                target:`http://dev.reactapp.com`,
-                changeOrigin: true,
-            }
-        },
         static: {
             directory: path.join(__dirname, 'dist'),
-            publicPath: '/',
         },    
     },
     entry:path.resolve(__dirname, 'src', 'index.js'),
@@ -55,7 +48,6 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            publicPath:'/',
             template:path.resolve(__dirname, 'src', 'index.html')
         })    
     ],

@@ -2,18 +2,15 @@ import React from "react";
 import './app.scss';
 
 function App(params) {
-    const apiCall = () => {
+    const buttonClickEvent = () => {
         console.log('Fetching results...');
-        fetch('/api/')
-            .then(response => response.json())
-            .then(data => console.log(data));
     }
     return(
         <div className="app">
             <h1>Hello World</h1>
             <button onClick={() => {
-                apiCall();
-            }}>Fetch Results</button>
+                buttonClickEvent();
+            }}>Click</button>
         </div>
     )
 }
