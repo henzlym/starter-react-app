@@ -1,6 +1,0 @@
-<IfModule mod_rewrite.c>
-RewriteEngine On
-
-</IfModule>
-
-# Example: https://serverfault.com/questions/942417/htaccess-change-document-root-to-public-and-prevent-public-from-being-used

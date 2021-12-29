@@ -55,8 +55,8 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template:path.resolve(__dirname, 'src', 'index.html'),
-            filename: currentTask == 'build' ? path.resolve(__dirname,'index.html') : path.resolve(__dirname,'dist','index.html')
+            publicPath:'/',
+            template:path.resolve(__dirname, 'src', 'index.html')
         })    
     ],
 }
